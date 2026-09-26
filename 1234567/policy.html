@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工会最新政策 · 天明昭世</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #1a0b2e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+}
+
+.card {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(18, 10, 32, 0.9);
+    border-radius: 16px;
+    padding: 40px 35px;
+    border: 1px solid #8b00ff;
+    color: #e0d4ff;
+    box-shadow: 0 0 40px rgba(139, 0, 255, 0.2);
+}
+
+h1 {
+    font-size: 38px;
+    text-align: center;
+    color: #c084fc;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a78bfa;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: #c084fc;
+    margin: 0 auto 30px;
+}
+
+.section {
+    background: #1a1230;
+    border: 1px solid #6a3ab2;
+    border-radius: 14px;
+    padding: 22px 25px;
+    margin-bottom: 22px;
+}
+
+.section h2 {
+    font-size: 17px;
+    color: #c084fc;
+    margin-bottom: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section h2::before {
+    content: '';
+    width: 4px;
+    height: 18px;
+    background: linear-gradient(180deg, #c084fc, #e879f9);
+    border-radius: 2px;
+}
+
+.rank-list {
+    list-style: none;
+    padding: 0;
+}
+
+.rank-list li {
+    font-size: 14px;
+    line-height: 2;
+    color: #c4b8e0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.rank-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #a855f7;
+    font-size: 14px;
+}
+
+.rank-list li.high {
+    color: #e879f9;
+    font-weight: bold;
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 2;
+    color: #c4b8e0;
+    margin-bottom: 8px;
+}
+
+.section p:last-child {
+    margin-bottom: 0;
+}
+
+.sub-title {
+    font-size: 13px;
+    color: #a78bfa;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: rgba(139, 0, 255, 0.2);
+    margin: 14px 0;
+}
+
+.highlight {
+    color: #e879f9;
+    font-weight: bold;
+}
+
+.back {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back a {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back a:hover {
+    background: #a855f7;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 750px) {
+    h1 { font-size: 28px; }
+    .card { padding: 25px 18px; }
+    .section { padding: 18px 18px; }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>工会最新政策</h1>
+    <div class="subtitle">GUILD POLICY</div>
+    <div class="divider"></div>
+
+    <!-- 职级体系 -->
+    <div class="section">
+        <h2>📜 职级体系</h2>
+        <ul class="rank-list">
+            <li class="high">元帅 — 公会最高统帅</li>
+            <li class="high">长老会</li>
+            <li>将官：大将 &gt; 上将 &gt; 中将 &gt; 少将</li>
+            <li>校官：上校 &gt; 中校 &gt; 少校</li>
+            <li>士官：上等军士长 &gt; 中级军士长 &gt; 军士长 &gt; 准军士长</li>
+            <li>士兵：特等列兵 &gt; 上等列兵 &gt; 列兵</li>
+        </ul>
+        <div class="line"></div>
+        <p><span class="highlight">元帅 &gt; 将官 &gt; 校官 &gt; 士官 &gt; 士兵</span></p >
+    </div>
+
+    <!-- 升级详情 -->
+    <div class="section">
+        <h2>📈 升级详情</h2>
+        <p><span class="highlight">士兵：</span>招 1 个人升 1 小级</p >
+        <p><span class="highlight">士官：</span>招 3 个人升 1 小级</p >
+        <p><span class="highlight">校官：</span>招 4 个人升 1 小级</p >
+        <p><span class="highlight">将官：</span>需要高层筛选</p >
+    </div>
+
+    <!-- 管理规则 -->
+    <div class="section">
+        <h2>📋 管理规则</h2>
+        <p>6 名永久管理；5 个活跃管理月底轮换。</p >
+        <p><span class="highlight">入选条件：</span>月活跃 ≥ 15 天，周消息 ≥ 800，月招新 ≥ 15 人，三项全达标，不达标撤职。</p >
+        <p>数据以后台为准，造假取消资格。</p >
+    </div>
+
+    <!-- 军饷制度 -->
+    <div class="section">
+        <h2>💰 军饷制度</h2>
+
+        <div class="sub-title">军饷获取途径：招人和活跃</div>
+        <p>· <span class="highlight">招人：</span>招到活跃天数满六天，不是多公会，可改马甲的人有军饷。</p >
+        <p>· <span class="highlight">发放时间：</span>2 月停发，其余每月 15 / 25 日发放。</p >
+        <p>· <span class="highlight">活跃度 + 消息榜</span> 前 5 名：2-4 元；重大贡献重赏。</p >
+        <p>· 打仗动员按出力另行分配，管理组商议决定。</p >
+    </div>
+
+    <!-- 公会公约 -->
+    <div class="section">
+        <h2>⚖️ 公会公约</h2>
+        <p>· 职位升降由元帅 + 长老会裁定。</p >
+        <p>· 禁止内斗滋事。</p >
+        <p>· 有异议可反馈。</p >
+    </div>
+
+    <div class="back">
+        <a href="index.html ">← 返回公会主页</a >
+    </div>
+</div>
+
+</body>
+</html>

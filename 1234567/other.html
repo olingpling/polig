@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>其他 · 天明昭世</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #1a0b2e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+}
+
+.card {
+    max-width: 1000px;
+    width: 100%;
+    background: rgba(18, 10, 32, 0.9);
+    border-radius: 16px;
+    padding: 40px 35px;
+    border: 1px solid #8b00ff;
+    color: #e0d4ff;
+    box-shadow: 0 0 40px rgba(139, 0, 255, 0.2);
+}
+
+h1 {
+    font-size: 38px;
+    text-align: center;
+    color: #c084fc;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a78bfa;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: #c084fc;
+    margin: 0 auto 30px;
+}
+
+/* 成员卡片网格 */
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.member {
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 160px;
+    background: #251740;
+    border: 1px solid #8b00ff;
+    border-radius: 12px;
+    padding: 18px 15px;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.member:hover {
+    border-color: #c084fc;
+    box-shadow: 0 0 25px rgba(139, 0, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+.member .label {
+    display: block;
+    font-size: 12px;
+    color: #9b8ac4;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.member .name {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    color: #e879f9;
+}
+
+/* 工作内容区 */
+.work {
+    background: #1a1230;
+    border: 1px solid #6a3ab2;
+    border-radius: 14px;
+    padding: 25px 22px;
+    margin-bottom: 30px;
+}
+
+.work h3 {
+    font-size: 15px;
+    color: #a78bfa;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.work ul {
+    list-style: none;
+    padding: 0;
+}
+
+.work li {
+    font-size: 14px;
+    line-height: 2;
+    color: #c4b8e0;
+    padding-left: 18px;
+    position: relative;
+}
+
+.work li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: #a855f7;
+    font-size: 10px;
+    top: 0.5rem;
+}
+
+/* 返回按钮 */
+.back {
+    text-align: center;
+}
+
+.back a {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back a:hover {
+    background: #a855f7;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 750px) {
+    h1 { font-size: 28px; }
+    .card { padding: 25px 18px; }
+    .member { flex: 1 1 calc(50% - 8px); }
+}
+
+@media (max-width: 480px) {
+    .member { flex: 1 1 100%; }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>其他</h1>
+    <div class="subtitle">OTHERS</div>
+    <div class="divider"></div>
+
+    <!-- 成员卡片 -->
+    <div class="members">
+        <div class="member">
+            <span class="label">PVP部 部长</span>
+            <span class="name">十年</span>
+        </div>
+        <div class="member">
+            <span class="label">肝帝</span>
+            <span class="name">誓燕</span>
+        </div>
+        <div class="member">
+            <span class="label">史官</span>
+            <span class="name">风云</span>
+        </div>
+        <div class="member">
+            <span class="label">资助方 / 二把手</span>
+            <span class="name">1十1</span>
+        </div>
+        <div class="member">
+            <span class="label">外交</span>
+            <span class="name">韦</span>
+        </div>
+        <div class="member">
+            <span class="label">网页制作 / PS P图</span>
+            <span class="name">鲱鱼味懒猎豹</span>
+        </div>
+    </div>
+
+    <!-- 工作内容 -->
+    <div class="work">
+        <h3>工作内容</h3>
+        <ul>
+            <li>PVP 竞技与对外战斗，维护公会安全与声誉</li>
+            <li>资源采集与后勤保障，支撑公会日常运作</li>
+            <li>记录公会重大事件与成员贡献，编写公会史册</li>
+            <li>资金支持与物资资助，协助公会管理与决策</li>
+            <li>与其他公会沟通联络，建立友好外交关系</li>
+            <li>公会宣传素材制作、网页设计与后期图片处理</li>
+        </ul>
+    </div>
+
+    <!-- 返回按钮 -->
+    <div class="back">
+        <a href="index.html ">← 返回公会主页</a >
+    </div>
+</div>
+
+</body>
+</html>

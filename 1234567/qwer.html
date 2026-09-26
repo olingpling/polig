@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>建筑师 · 天明昭世</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #1a0b2e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+}
+
+.card {
+    max-width: 1000px;
+    width: 100%;
+    background: rgba(18, 10, 32, 0.9);
+    border-radius: 16px;
+    padding: 40px 35px;
+    border: 1px solid #8b00ff;
+    color: #e0d4ff;
+    box-shadow: 0 0 40px rgba(139, 0, 255, 0.2);
+}
+
+h1 {
+    font-size: 38px;
+    text-align: center;
+    color: #c084fc;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a78bfa;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: #c084fc;
+    margin: 0 auto 30px;
+}
+
+.layout {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 1;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.right {
+    flex: 1.6;
+    min-width: 300px;
+    background: #1a1230;
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid #6a3ab2;
+}
+
+.leader {
+    background: #251740;
+    border: 1px solid #8b00ff;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.leader .label {
+    display: block;
+    font-size: 12px;
+    color: #9b8ac4;
+    margin-bottom: 5px;
+}
+
+.leader .name {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e879f9;
+}
+
+.box {
+    background: #1a1230;
+    border: 1px solid #6a3ab2;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.box h3 {
+    font-size: 14px;
+    color: #a78bfa;
+    margin-bottom: 12px;
+}
+
+.box p, .box li {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #c4b8e0;
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box li {
+    padding-left: 16px;
+    position: relative;
+}
+
+.box li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: #a855f7;
+    font-size: 10px;
+}
+
+.gallery-title {
+    font-size: 14px;
+    color: #a78bfa;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.item {
+    flex: 1 1 calc(50% - 6px);
+    min-width: 120px;
+    aspect-ratio: 4 / 3;
+    background: #120a20;
+    border: 1px solid #6a3ab2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #c084fc;
+    transition: all 0.25s ease;
+}
+
+.item:hover {
+    border-color: #c084fc;
+    box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+.back {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.back a {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back a:hover {
+    background: #a855f7;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 750px) {
+    h1 { font-size: 28px; }
+    .card { padding: 25px 18px; }
+    .layout { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>建筑师</h1>
+    <div class="subtitle">ARCHITECT</div>
+    <div class="divider"></div>
+
+    <div class="layout">
+        <div class="left">
+            <div class="leader">
+                <span class="label">部长</span>
+                <span class="name">十年</span>
+            </div>
+            <div class="leader">
+                <span class="label">副部长</span>
+                <span class="name">玉</span>
+            </div>
+
+            <div class="box">
+                <h3>部门职责</h3>
+                <p>负责公会主城、成员基地、景观建筑的设计与施工。</p >
+            </div>
+
+            <div class="box">
+                <h3>入会要求</h3>
+                <ul>
+                    <li>能独立完成中型以上建筑项目</li>
+                    <li>熟悉常用建筑方块与配色搭配</li>
+                    <li>每周至少在线 3 小时参与集体项目</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="gallery-title">建筑作品展示</div>
+            <div class="gallery">
+                <div class="item">主城</div>
+                <div class="item">成员基地</div>
+                <div class="item">景观园林</div>
+                <div class="item">红石建筑</div>
+                <div class="item">像素艺术</div>
+                <div class="item">待更新</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="index.html">← 返回公会主页</a >
+    </div>
+</div>
+
+</body>
+</html>

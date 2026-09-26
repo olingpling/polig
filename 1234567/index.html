@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>天明昭世 · 公会主页</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #1a0b2e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    max-width: 680px;
+    width: 100%;
+    background: #120a20;
+    border-radius: 20px;
+    padding: 45px 40px;
+    border: 1px solid #8b00ff;
+    color: #e0d4ff;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(139, 0, 255, 0.3);
+}
+
+.emblem {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(139, 0, 255, 0.5);
+    background-color: rgba(139, 0, 255, 0.1);
+    background-image: url('logo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.guild-name {
+    font-size: 40px;
+    font-weight: bold;
+    color: #c084fc;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.guild-tag {
+    font-size: 13px;
+    letter-spacing: 6px;
+    color: #a78bfa;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: #c084fc;
+    margin: 0 auto 25px;
+}
+
+.desc {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #a78bfa;
+    max-width: 480px;
+    margin: 0 auto 30px;
+}
+
+.roles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.role {
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    background: rgba(139, 0, 255, 0.15);
+    border: 1px solid #8b00ff;
+    color: #c084fc;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.role:hover {
+    background: rgba(139, 0, 255, 0.35);
+    color: #ffffff;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(139, 0, 255, 0.3);
+    border-bottom: 1px solid rgba(139, 0, 255, 0.3);
+    margin-bottom: 30px;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e879f9;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #7c6ba0;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.president {
+    background: rgba(139, 0, 255, 0.15);
+    border: 1px solid #8b00ff;
+    border-radius: 14px;
+    padding: 15px 25px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.president .label {
+    display: block;
+    font-size: 11px;
+    color: #9b8ac4;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.president .name {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #e879f9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 10px;
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #a855f7;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #5a4a7a;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+    .card { padding: 30px 20px; }
+    .guild-name { font-size: 30px; }
+    .stats { gap: 20px; }
+    .stat-value { font-size: 18px; }
+}
+</style>
+</head>
+<body>
+
+<main class="card">
+        <div class="emblem"><img src="logo.jpg.jpg" width="90" height="90" alt=""/></div>
+
+    <h1 class="guild-name">天明昭世</h1>
+    <span class="guild-tag">DAWN BREAKER</span>
+
+    <div class="divider"></div>
+
+    <p class="desc">
+        我们是一支活跃于网易我的世界的公会。从主城建造到红石科技，
+        从下界探险到末地征战，欢迎每一位热爱方块世界的玩家加入。
+    </p >
+
+    <div class="roles">
+        <a href="qwer.html" class="role">建筑师</a >
+        <a href="redstone.html" class="role">红石工程师</a >
+        <a href="other.html" class="role">其他</a >
+        <a href="interact.html" class="role">玩家最新互动</a >
+        <a href="policy.html" class="role">工会最新政策</a >
+    </div>
+
+    <div class="stats">
+        <div>
+            <div class="stat-value">T2级</div>
+            <div class="stat-label">公会等级</div>
+        </div>
+        
+    </div>
+
+    <div class="president">
+        <span class="label">工会会长</span>
+        <span class="name">星耀</span>
+    </div>
+
+    <div>
+        <a href="join.html" class="btn">申请加入</a >
+    </div>
+
+    <div class="footer">网易我的世界 · 生存服 · 长期招新</div>
+</main>
+
+</body>
+</html>
+      
